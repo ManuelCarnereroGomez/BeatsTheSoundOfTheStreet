@@ -14,11 +14,11 @@
         <nav>
             <img src="assets/images/beats.jpeg" alt="logo-revista" class="logo">
             <ul class="barraArticulos">
-                <li class="articulos">Moda</li>
-                <li class="articulos">Música</li>
-                <li class="articulos">Novedades</li>
-                <li class="articulos">Colecciones</li>
-                <li class="ultimoArticulo">Entrevistas</li>
+                <li class="articulos"><a href="#">Moda</a></li>
+                <li class="articulos"><a href="#">Música</a></li>
+                <li class="articulos"><a href="#">Novedades</a></li>
+                <li class="articulos"><a href="#">Colecciones</a></li>
+                <li class="ultimoArticulo"><a href="#">Entrevistas</a></li>
             </ul>
             <div class="buscador">
                 <img src="assets/images/magnifier_magnifying_glass_icon_149435.png" alt="" class="lupa">
@@ -28,14 +28,53 @@
     </header>
     <div class="barra"></div>
     <main>
-        <article class="articuloPrincipal"></article>
+        <article id="uno" class="articuloPrincipal">
+            <img src="assets/images/170178287_830251187919177_3339708213658320797_n.jpg" alt="" class="principal articulo" onclick="abrirArticulo()">
+            <div class="texto">
+                <h1 class="h1">NIKE AIR JORDAN 1 HIGH DE J BALVIN.</h1>
+                <p class="t1">Inicialmente, la marca de ropa deportiva Jordan Brand buscó a J Balvin para captarlo como
+                    su imagen de una serie de campañas con motivo del Mes de la Herencia Hispana, incluyenyo fotografias
+                    suyas en iniciativas publicitarias y otros lanzamientos claves.</p>
+            </div>
+        </article>
         <section class="grid">
-            <article class="articuloSecundario"></article>
-            <article class="articuloSecundario"></article>
-            <article class="articuloSecundario"></article>
-            <article class="articuloSecundario"></article>
+            <article id="dos" class="articuloSecundario">
+                <img src="assets/images/fc2.jpg" alt="" class="secundaria articulo" onclick="abrirArticulo()">
+                <div class="texto2">
+                    <h2 class="h2">SEAN JOHN VUELVE CON SU NUEVA COLECCIÓN SS21</h2>
+                    <p class="t2">Mucho ha pasado desde que Sean Combs, también conocido como Puff Daddy, fundara Sean
+                        John allá por 1998.</p>
+                </div>
+            </article>
+            <article id="tres" class="articuloSecundario">
+                <img src="assets/images/joey-badass-pony.jpg" alt="" class="secundaria articulo" onclick="abrirArticulo()">
+                <div class="texto2">
+                    <h2 class="h2">Entrevista Joey Badass</h2>
+                    <p class="t2">Quién es Joey Badass, el rapero más multidisciplinar y presumido del momento.</p>
+                </div>
+            </article>
+            <article id="cuatro" class="articuloSecundario">
+                <img src="assets/images/j-balvin-nike-air-jordan-1-release-date-price-14.jpg" alt="" class="secundaria articulo" onclick="abrirArticulo()">
+                <div class="texto2">
+                    <h2 class="h2">Top 5 sneakers del año</h2>
+                    <p class="t2">Durante meses, hemos estado proyectando el inmiente surgimiento de una sociedad
+                        post-sneaker</p>
+                </div>
+            </article>
+            <article id="cinco" class="articuloSecundario">
+                <img src="assets/images/JBalvin_Jordan4.jpg" alt="" class="secundaria articulo" onclick="abrirArticulo()">
+                <div class="texto2">
+                    <h2 class="h2">El "boom" de la moda urbana</h2>
+                    <p class="t2">Los consumidores de este tipo de ropa compiten en las redes sociales para ver quién es
+                        el primero en hacerse con el último producto.</p>
+                </div>
+            </article>
         </section>
     </main>
+    <div class="barraAnuncio">
+        <img src="assets/images/maxresdefault (2).jpg" alt="">
+    </div>
+    <script src="assets/app/main.js"></script>
 </body>
 
 </html>

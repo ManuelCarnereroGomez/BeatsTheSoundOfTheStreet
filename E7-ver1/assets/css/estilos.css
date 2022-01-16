@@ -1,0 +1,277 @@
+html, body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .logo {
+  width: 20%;
+  padding: 20px;
+  margin-right: -40px;
+}
+
+header nav .barraArticulos {
+  list-style: none;
+  display: flex;
+  background-color: #58ffeb;
+  justify-content: space-between;
+  padding: 20px 0 20px 0;
+  height: 50px;
+  align-items: center;
+  margin: -40px 0 0 0;
+  font-size: 30px;
+}
+
+header nav .barraArticulos .articulos {
+  padding: 0 10px 0 10px;
+  border-right: 2px solid black;
+}
+
+header nav .barraArticulos .ultimoArticulo {
+  border-right: 0px;
+  padding: 0 10px 0 10px;
+}
+
+header nav .barraArticulos2 {
+  list-style: none;
+  display: flex;
+  background-color: #FFE8CD;
+  justify-content: space-between;
+  padding: 20px 0 20px 0;
+  height: 50px;
+  align-items: center;
+  margin: -40px 0 0 0;
+  font-size: 30px;
+}
+
+header nav .barraArticulos2 .articulos {
+  padding: 0 10px 0 10px;
+  border-right: 2px solid black;
+}
+
+header nav .barraArticulos2 .ultimoArticulo {
+  border-right: 0px;
+  padding: 0 10px 0 10px;
+}
+
+header nav .buscador {
+  display: flex;
+  padding: 0 40px 0 0;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+header nav .buscador .lupa {
+  width: 30%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: white;
+}
+
+.barra {
+  width: 100%;
+  height: 40px;
+  background-color: #58ffeb;
+  margin: 40px 0 20px 0;
+}
+
+.barra2 {
+  width: 100%;
+  height: 40px;
+  background-color: #FFE8CD;
+  margin: 40px 0 20px 0;
+}
+
+main {
+  margin: 0 50px;
+}
+
+main .articuloPrincipal {
+  display: flex;
+  padding: 40px;
+  justify-content: space-around;
+}
+
+main .articuloPrincipal .principal {
+  width: 600px;
+  height: 500px;
+}
+
+main .articuloPrincipal .texto {
+  width: 40%;
+}
+
+main .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  padding: 40px 0 40px 50px;
+}
+
+main .grid .articuloSecundario {
+  width: 500px;
+  height: 100%;
+  margin: 0 100px;
+}
+
+main .grid .articuloSecundario .secundaria {
+  object-fit: cover;
+  width: 100%;
+  height: 500px;
+}
+
+main .imagenArticulo {
+  height: 500px;
+  width: 50%;
+  overflow: hidden;
+}
+
+main .imagenArticulo img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+main .textoArticulo .nombreArticulo {
+  font-size: 4em;
+}
+
+main .textoArticulo .t3 {
+  font-size: 1.2em;
+}
+
+.barraAnuncio {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.barraAnuncio img {
+  width: 100%;
+  object-position: 50% -500px;
+}
+
+.textoBarra {
+  margin-left: 80px;
+  background-color: white;
+  width: 800px;
+  padding: 5px;
+  height: 30px;
+}
+
+.h1 {
+  font-size: 2.5em;
+}
+
+.t1 {
+  font-size: 1.5em;
+}
+
+.h2 {
+  font-size: 1.7em;
+}
+
+.t2 {
+  font-size: 1em;
+}
+
+.articuloPrincipal, .articuloSecundario {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  header nav .logo {
+    width: 40%;
+  }
+  header nav .barraArticulos, header nav .barraArticulos2 {
+    display: none;
+  }
+  header nav .buscador .lupa {
+    width: 50%;
+  }
+  header nav .buscador .barraBuscador {
+    display: none;
+  }
+  main {
+    margin: 0;
+  }
+  main .articuloPrincipal {
+    display: block;
+    padding: 0;
+  }
+  main .articuloPrincipal .principal {
+    width: 100%;
+  }
+  main .articuloPrincipal .texto .h1 {
+    position: absolute;
+    top: 550px;
+    background-color: white;
+  }
+  main .articuloPrincipal .texto .t1 {
+    display: none;
+  }
+  main .grid {
+    padding: 0;
+  }
+  main .grid .articuloSecundario {
+    padding-top: 50px;
+    width: 70%;
+    height: 30%;
+    margin: 0 50px;
+  }
+  main .grid .articuloSecundario .secundaria {
+    height: 200px;
+  }
+  .barraAnuncio {
+    height: 200px;
+    overflow: hidden;
+  }
+  .barraAnuncio img {
+    object-position: 50% -250px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  main .grid {
+    display: flex;
+    flex-direction: column;
+  }
+  main .grid .articuloSecundario {
+    width: 80%;
+    height: 80%;
+    margin: 0 20px;
+  }
+  main .grid .articuloSecundario .secundaria {
+    height: 400px;
+  }
+  .barraAnuncio {
+    width: 50px;
+    height: 100%;
+  }
+  .barraAnuncio img {
+    position: absolute;
+    top: 700px;
+    right: 0;
+    width: 100px;
+    height: 100%;
+    object-fit: cover;
+    object-position: -700px 50%;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
