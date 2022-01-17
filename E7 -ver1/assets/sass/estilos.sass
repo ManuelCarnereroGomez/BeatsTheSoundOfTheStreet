@@ -118,9 +118,10 @@ main
 .textoBarra
     margin-left: 80px
     background-color: white
-    width: 800px
+    width: 47%
     padding: 5px
     height: 30px
+    text-align: center
 .h1
     font-size: 2.5em
 .t1
@@ -132,6 +133,7 @@ main
 .articuloPrincipal, .articuloSecundario
     cursor: pointer
 
+    
 @media screen and (max-width: 900px)
     header
         nav
@@ -167,11 +169,18 @@ main
                 margin: 0 50px
                 .secundaria
                     height: 200px
+        .textoArticulo
+            .nombreArticulo
+                padding: 20px
+            .t3
+                padding: 20px
     .barraAnuncio
         height: 200px
         overflow: hidden
         img
             object-position: 50% -250px
+    .textoBarra
+        font-size: 1em
 @media screen and (max-width: 700px)
     main
         .grid
@@ -183,6 +192,7 @@ main
                 margin: 0 20px
                 .secundaria
                     height: 400px
+
     .barraAnuncio
         width: 50px
         height: 100%
@@ -194,3 +204,4 @@ main
             height: 100%
             object-fit: cover
             object-position: -700px 50%
+        

@@ -12,8 +12,15 @@ header nav {
   align-items: center;
 }
 
+.Subscripcion {
+  text-align: center;
+  width: auto;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
 header nav .logo {
-  width: 20%;
+  width: 10%;
   padding: 20px;
   margin-right: -40px;
 }
@@ -27,7 +34,7 @@ header nav .barraArticulos {
   height: 50px;
   align-items: center;
   margin: -40px 0 0 0;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 header nav .barraArticulos .articulos {
@@ -49,7 +56,7 @@ header nav .barraArticulos2 {
   height: 50px;
   align-items: center;
   margin: -40px 0 0 0;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 header nav .barraArticulos2 .articulos {
@@ -170,9 +177,10 @@ main .textoArticulo .t3 {
 .textoBarra {
   margin-left: 80px;
   background-color: white;
-  width: 800px;
+  width: 47%;
   padding: 5px;
   height: 30px;
+  text-align: center;
 }
 
 .h1 {
@@ -238,12 +246,21 @@ main .textoArticulo .t3 {
   main .grid .articuloSecundario .secundaria {
     height: 200px;
   }
+  main .textoArticulo .nombreArticulo {
+    padding: 20px;
+  }
+  main .textoArticulo .t3 {
+    padding: 20px;
+  }
   .barraAnuncio {
     height: 200px;
     overflow: hidden;
   }
   .barraAnuncio img {
     object-position: 50% -250px;
+  }
+  .textoBarra {
+    font-size: 1em;
   }
 }
 
